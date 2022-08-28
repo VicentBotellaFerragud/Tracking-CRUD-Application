@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "Q9vcavuyWe0VKfB6G663U6p23U3hDL9vK34sZ1CF+HQtpT9w9HGKhOFO/dFYjNfQGpTPE47v2SaR2kR97F5Cgg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\vicen\\Desktop\\Programació\\Weiterbildung Developer Akademie\\Front-end projects\\Angular projects\\CRUD-Application\\Tracking-API\\Tracking-API\\Tracking-API.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\vicen\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\vicen\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\vicen\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "C:\\Users\\vicen\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "C:\\Users\\vicen\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "C:\\Users\\vicen\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}
