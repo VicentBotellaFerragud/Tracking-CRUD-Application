@@ -25,3 +25,30 @@ C:\Users\vicen\Desktop\Programació\Weiterbildung Developer Akademie\Front-end p
 C:\Users\vicen\Desktop\Programació\Weiterbildung Developer Akademie\Front-end projects\Angular projects\CRUD-Application\Tracking-API\Tracking-API\obj\Debug\net6.0\Tracking-API.pdb
 C:\Users\vicen\Desktop\Programació\Weiterbildung Developer Akademie\Front-end projects\Angular projects\CRUD-Application\Tracking-API\Tracking-API\obj\Debug\net6.0\Tracking-API.genruntimeconfig.cache
 C:\Users\vicen\Desktop\Programació\Weiterbildung Developer Akademie\Front-end projects\Angular projects\CRUD-Application\Tracking-API\Tracking-API\obj\Debug\net6.0\ref\Tracking-API.dll
+C:\Users\vicen\Desktop\Programació\Weiterbildung Developer Akademie\Full-stack projects\Tracking-CRUD-Application\TrackingAPI\Tracking-API\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\vicen\Desktop\Programació\Weiterbildung Developer Akademie\Full-stack projects\Tracking-CRUD-Application\TrackingAPI\Tracking-API\bin\Debug\net6.0\appsettings.json
+C:\Users\vicen\Desktop\Programació\Weiterbildung Developer Akademie\Full-stack projects\Tracking-CRUD-Application\TrackingAPI\Tracking-API\bin\Debug\net6.0\Tracking-API.exe
+C:\Users\vicen\Desktop\Programació\Weiterbildung Developer Akademie\Full-stack projects\Tracking-CRUD-Application\TrackingAPI\Tracking-API\bin\Debug\net6.0\Tracking-API.deps.json
+C:\Users\vicen\Desktop\Programació\Weiterbildung Developer Akademie\Full-stack projects\Tracking-CRUD-Application\TrackingAPI\Tracking-API\bin\Debug\net6.0\Tracking-API.runtimeconfig.json
+C:\Users\vicen\Desktop\Programació\Weiterbildung Developer Akademie\Full-stack projects\Tracking-CRUD-Application\TrackingAPI\Tracking-API\bin\Debug\net6.0\Tracking-API.dll
+C:\Users\vicen\Desktop\Programació\Weiterbildung Developer Akademie\Full-stack projects\Tracking-CRUD-Application\TrackingAPI\Tracking-API\bin\Debug\net6.0\Tracking-API.pdb
+C:\Users\vicen\Desktop\Programació\Weiterbildung Developer Akademie\Full-stack projects\Tracking-CRUD-Application\TrackingAPI\Tracking-API\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\vicen\Desktop\Programació\Weiterbildung Developer Akademie\Full-stack projects\Tracking-CRUD-Application\TrackingAPI\Tracking-API\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\vicen\Desktop\Programació\Weiterbildung Developer Akademie\Full-stack projects\Tracking-CRUD-Application\TrackingAPI\Tracking-API\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\vicen\Desktop\Programació\Weiterbildung Developer Akademie\Full-stack projects\Tracking-CRUD-Application\TrackingAPI\Tracking-API\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\vicen\Desktop\Programació\Weiterbildung Developer Akademie\Full-stack projects\Tracking-CRUD-Application\TrackingAPI\Tracking-API\obj\Debug\net6.0\Tracking-API.csproj.AssemblyReference.cache
+C:\Users\vicen\Desktop\Programació\Weiterbildung Developer Akademie\Full-stack projects\Tracking-CRUD-Application\TrackingAPI\Tracking-API\obj\Debug\net6.0\Tracking-API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vicen\Desktop\Programació\Weiterbildung Developer Akademie\Full-stack projects\Tracking-CRUD-Application\TrackingAPI\Tracking-API\obj\Debug\net6.0\Tracking-API.AssemblyInfoInputs.cache
+C:\Users\vicen\Desktop\Programació\Weiterbildung Developer Akademie\Full-stack projects\Tracking-CRUD-Application\TrackingAPI\Tracking-API\obj\Debug\net6.0\Tracking-API.AssemblyInfo.cs
+C:\Users\vicen\Desktop\Programació\Weiterbildung Developer Akademie\Full-stack projects\Tracking-CRUD-Application\TrackingAPI\Tracking-API\obj\Debug\net6.0\Tracking-API.csproj.CoreCompileInputs.cache
+C:\Users\vicen\Desktop\Programació\Weiterbildung Developer Akademie\Full-stack projects\Tracking-CRUD-Application\TrackingAPI\Tracking-API\obj\Debug\net6.0\Tracking-API.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\vicen\Desktop\Programació\Weiterbildung Developer Akademie\Full-stack projects\Tracking-CRUD-Application\TrackingAPI\Tracking-API\obj\Debug\net6.0\Tracking-API.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\vicen\Desktop\Programació\Weiterbildung Developer Akademie\Full-stack projects\Tracking-CRUD-Application\TrackingAPI\Tracking-API\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\vicen\Desktop\Programació\Weiterbildung Developer Akademie\Full-stack projects\Tracking-CRUD-Application\TrackingAPI\Tracking-API\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\vicen\Desktop\Programació\Weiterbildung Developer Akademie\Full-stack projects\Tracking-CRUD-Application\TrackingAPI\Tracking-API\obj\Debug\net6.0\scopedcss\bundle\Tracking-API.styles.css
+C:\Users\vicen\Desktop\Programació\Weiterbildung Developer Akademie\Full-stack projects\Tracking-CRUD-Application\TrackingAPI\Tracking-API\obj\Debug\net6.0\Tracking-API.csproj.CopyComplete
+C:\Users\vicen\Desktop\Programació\Weiterbildung Developer Akademie\Full-stack projects\Tracking-CRUD-Application\TrackingAPI\Tracking-API\obj\Debug\net6.0\Tracking-API.dll
+C:\Users\vicen\Desktop\Programació\Weiterbildung Developer Akademie\Full-stack projects\Tracking-CRUD-Application\TrackingAPI\Tracking-API\obj\Debug\net6.0\refint\Tracking-API.dll
+C:\Users\vicen\Desktop\Programació\Weiterbildung Developer Akademie\Full-stack projects\Tracking-CRUD-Application\TrackingAPI\Tracking-API\obj\Debug\net6.0\Tracking-API.pdb
+C:\Users\vicen\Desktop\Programació\Weiterbildung Developer Akademie\Full-stack projects\Tracking-CRUD-Application\TrackingAPI\Tracking-API\obj\Debug\net6.0\Tracking-API.genruntimeconfig.cache
+C:\Users\vicen\Desktop\Programació\Weiterbildung Developer Akademie\Full-stack projects\Tracking-CRUD-Application\TrackingAPI\Tracking-API\obj\Debug\net6.0\ref\Tracking-API.dll

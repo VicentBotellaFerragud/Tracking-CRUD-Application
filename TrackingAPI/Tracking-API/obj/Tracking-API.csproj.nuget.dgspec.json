@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\vicen\\Desktop\\Programació\\Weiterbildung Developer Akademie\\Front-end projects\\Angular projects\\CRUD-Application\\Tracking-API\\Tracking-API\\Tracking-API.csproj": {}
+    "C:\\Users\\vicen\\Desktop\\Programació\\Weiterbildung Developer Akademie\\Full-stack projects\\Tracking-CRUD-Application\\TrackingAPI\\Tracking-API\\Tracking-API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\vicen\\Desktop\\Programació\\Weiterbildung Developer Akademie\\Front-end projects\\Angular projects\\CRUD-Application\\Tracking-API\\Tracking-API\\Tracking-API.csproj": {
+    "C:\\Users\\vicen\\Desktop\\Programació\\Weiterbildung Developer Akademie\\Full-stack projects\\Tracking-CRUD-Application\\TrackingAPI\\Tracking-API\\Tracking-API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\vicen\\Desktop\\Programació\\Weiterbildung Developer Akademie\\Front-end projects\\Angular projects\\CRUD-Application\\Tracking-API\\Tracking-API\\Tracking-API.csproj",
+        "projectUniqueName": "C:\\Users\\vicen\\Desktop\\Programació\\Weiterbildung Developer Akademie\\Full-stack projects\\Tracking-CRUD-Application\\TrackingAPI\\Tracking-API\\Tracking-API.csproj",
         "projectName": "Tracking-API",
-        "projectPath": "C:\\Users\\vicen\\Desktop\\Programació\\Weiterbildung Developer Akademie\\Front-end projects\\Angular projects\\CRUD-Application\\Tracking-API\\Tracking-API\\Tracking-API.csproj",
+        "projectPath": "C:\\Users\\vicen\\Desktop\\Programació\\Weiterbildung Developer Akademie\\Full-stack projects\\Tracking-CRUD-Application\\TrackingAPI\\Tracking-API\\Tracking-API.csproj",
         "packagesPath": "C:\\Users\\vicen\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\vicen\\Desktop\\Programació\\Weiterbildung Developer Akademie\\Front-end projects\\Angular projects\\CRUD-Application\\Tracking-API\\Tracking-API\\obj\\",
+        "outputPath": "C:\\Users\\vicen\\Desktop\\Programació\\Weiterbildung Developer Akademie\\Full-stack projects\\Tracking-CRUD-Application\\TrackingAPI\\Tracking-API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\vicen\\AppData\\Roaming\\NuGet\\NuGet.Config",

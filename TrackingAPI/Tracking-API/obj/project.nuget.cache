@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Q9vcavuyWe0VKfB6G663U6p23U3hDL9vK34sZ1CF+HQtpT9w9HGKhOFO/dFYjNfQGpTPE47v2SaR2kR97F5Cgg==",
+  "dgSpecHash": "nMDrZjXGSPDKv8hUSq4Sx9egWDdUbjyXwDkq2ytUh4CCtQbBV1yX9o93pU9TPhAK98uKiQy/b+MF8pTIny1dAw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\vicen\\Desktop\\Programació\\Weiterbildung Developer Akademie\\Front-end projects\\Angular projects\\CRUD-Application\\Tracking-API\\Tracking-API\\Tracking-API.csproj",
+  "projectFilePath": "C:\\Users\\vicen\\Desktop\\Programació\\Weiterbildung Developer Akademie\\Full-stack projects\\Tracking-CRUD-Application\\TrackingAPI\\Tracking-API\\Tracking-API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\vicen\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\vicen\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
