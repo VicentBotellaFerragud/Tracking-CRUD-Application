@@ -13,7 +13,8 @@ namespace Tracking_API.Controllers
         private readonly IssueDbContext _context;
 
         public IssueController(IssueDbContext context) => _context = context;
-
+        
+        [HttpGet]
         public async Task<IEnumerable<Issue>> Get()
         {
             return await _context.Issues.ToListAsync();
