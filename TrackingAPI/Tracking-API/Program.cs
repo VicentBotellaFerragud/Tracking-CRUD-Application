@@ -15,6 +15,12 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<IssueDbContext>(
     o => o.UseSqlServer(builder.Configuration.GetConnectionString("SqlServer")));
 
+builder.Services.AddCors(options => options.AddPolicy(name: "IssueOrigins",
+    policy =>
+    {
+        policy.WithOrigins("http://localhost:4200").AllowAnyMethod().AllowAnyHeader();
+    }));
+
 var app = builder.Build();
 
 //Configure the HTTP request pipeline.
@@ -23,6 +29,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+app.UseCors("IssueOrigins");
 
 app.UseHttpsRedirection();
 

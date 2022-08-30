@@ -1,0 +1,11 @@
+<h1>This is the tracking app!</h1>
+
+<button (click)="getIssueById(1)">Console log issue with id 1</button>
+<button (click)="getIssueById(2)">Console log issue with id 1</button>
+
+<div style="display: flex; flex-direction: column;">
+    <span>Create an issue</span>
+    <input placeholder="enter the title of the issue" [(ngModel)]="title">
+    <input placeholder="enter the description of the issue" [(ngModel)]="description">
+    <button (click)="createIssue(newIssue)">Create issue</button>
+</div>

@@ -31,12 +31,12 @@ namespace Tracking_API.Controllers
 
         [HttpPost]
         [ProducesResponseType(StatusCodes.Status201Created)]
-        public async Task<IActionResult> Create(Issue issue)
+        public async Task<IEnumerable<Issue>> Create(Issue issue)
         {
-            await _context.Issues.AddAsync(issue);
+            _context.Issues.Add(issue);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction(nameof(GetById), new { id = issue.Id }, issue);
+            return await _context.Issues.ToListAsync();
         }
 
         [HttpPut("{id}")]
