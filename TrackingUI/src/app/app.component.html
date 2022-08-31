@@ -1,11 +1,29 @@
 <h1>This is the tracking app!</h1>
 
 <button (click)="getIssueById(1)">Console log issue with id 1</button>
-<button (click)="getIssueById(2)">Console log issue with id 1</button>
+<button (click)="getIssueById(2)">Console log issue with id 2</button>
 
 <div style="display: flex; flex-direction: column;">
     <span>Create an issue</span>
     <input placeholder="enter the title of the issue" [(ngModel)]="title">
     <input placeholder="enter the description of the issue" [(ngModel)]="description">
     <button (click)="createIssue(newIssue)">Create issue</button>
+</div>
+
+<br><br><br>
+
+<div style="display: flex; flex-direction: column;">
+    <span>Edit an issue</span>
+    <input placeholder="enter the id of the issue you want to edit" [(ngModel)]="idToEdit">
+    <input placeholder="enter the new title of the issue" [(ngModel)]="newTitle">
+    <input placeholder="enter the new description of the issue" [(ngModel)]="newDescription">
+    <button (click)="editIssue(idToEdit)">Edit the issue</button>
+</div>
+
+<br><br><br>
+
+<div style="display: flex; flex-direction: column;">
+    <span>Delete an issue</span>
+    <input placeholder="enter the id of the issue you want to delete" [(ngModel)]="idToDelete">
+    <button (click)="deleteIssue(idToDelete)">Delete the issue</button>
 </div>

@@ -39,17 +39,23 @@ namespace Tracking_API.Controllers
             return await _context.Issues.ToListAsync();
         }
 
-        [HttpPut("{id}")]
+        [HttpPut]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public async Task<IActionResult> Update(int id, Issue issue)
+        public async Task<IEnumerable<Issue>> Update(Issue issue)
         {
-            if (id != issue.Id) return BadRequest();
+            var dbIssue = await _context.Issues.FindAsync(issue.Id);
+            if (dbIssue == null)
+                return (IEnumerable<Issue>)BadRequest("Issue not found.");
 
-            _context.Entry(issue).State = EntityState.Modified;
+            dbIssue.Title = issue.Title;
+            dbIssue.Description = issue.Description;
+            dbIssue.Priority = issue.Priority;
+            dbIssue.Type = issue.Type;
+
             await _context.SaveChangesAsync();
 
-            return NoContent();
+            return await _context.Issues.ToListAsync();
         }
 
         [HttpDelete("{id}")]

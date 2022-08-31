@@ -32,4 +32,18 @@ export class IssueService {
 
   }
 
+  public editIssue(issue: Issue): Observable<Issue[]> {
+    
+    return this.http.put<Issue[]>(this.url, issue);
+
+  }
+
+  public deleteIssue(issue: Issue): Observable<Issue[]> {
+
+    let url = `${this.url}/${issue.id}`;
+    
+    return this.http.delete<Issue[]>(url);
+
+  }
+
 }
