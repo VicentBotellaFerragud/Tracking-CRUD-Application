@@ -66,7 +66,6 @@ export class AppComponent implements OnInit {
     
   }
 
-  // Al
   editIssue(idToEdit: number) {
 
     let idToEditToNumber = Number(idToEdit);
