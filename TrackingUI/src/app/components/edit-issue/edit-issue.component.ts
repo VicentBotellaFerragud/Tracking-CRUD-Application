@@ -22,6 +22,16 @@ export class EditIssueComponent implements OnInit {
 
   updateIssue(issue: Issue) {
 
+    if (issue.completed) {
+
+      issue.completed = new Date();
+
+    } else {
+
+      issue.completed = undefined;
+
+    }
+
     this.issueService.editIssue(issue).pipe(takeUntil(this.destroy)).subscribe((issues: Issue[] | any) => {
 
       this.issuesUpdated.emit(issues);
@@ -46,13 +56,17 @@ export class EditIssueComponent implements OnInit {
 
   createIssue(issue: Issue) {
 
-    !issue.priority ? issue.priority = 0 : issue.priority = issue.priority;
-
-    !issue.type ? issue.type = 0 : issue.type = issue.type;
-
     issue.createdAt = new Date();
 
-    !issue.completed ? issue.completed = "" : issue.completed = issue.completed;
+    if (issue.completed) {
+
+      issue.completed = new Date();
+
+    } else {
+
+      issue.completed = undefined;
+
+    }
 
     this.issueService.createIssue(issue).pipe(takeUntil(this.destroy)).subscribe((issues: Issue[] | any) => {
 

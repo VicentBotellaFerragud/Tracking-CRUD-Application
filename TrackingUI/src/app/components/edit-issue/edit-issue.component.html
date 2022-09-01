@@ -31,24 +31,15 @@
     <div class="my-1">
 
         Completed:
-        <input [(ngModel)]="issue.completed" type="checkbox" value="Completed"/>
+        <input [(ngModel)]="issue.completed" type="checkbox" value="completed"/>
 
     </div>
 
     <div>
 
-        <button class="update-btn" (click)="updateIssue(issue)" 
-        *ngIf="issue.id" [disabled]="!issue.title || !issue.description || !issue.type || !issue.description">
-            Save
-        </button>
-        <button class="delete-btn" (click)="deleteIssue(issue)" 
-        *ngIf="issue.id" [disabled]="!issue.title || !issue.description || !issue.type || !issue.description">
-            Delete
-        </button>
-        <button class="create-btn" (click)="createIssue(issue)" 
-        *ngIf="!issue.id" [disabled]="!issue.title || !issue.description">
-            Create
-        </button>
+        <button class="update-btn" (click)="updateIssue(issue)" *ngIf="issue.id" [disabled]="!issue.title || !issue.description">Save</button>
+        <button class="delete-btn" (click)="deleteIssue(issue)" *ngIf="issue.id">Delete</button>
+        <button class="create-btn" (click)="createIssue(issue)" *ngIf="!issue.id" [disabled]="!issue.title || !issue.description">Create</button>
 
     </div>
 

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Subject } from 'rxjs';
+import { Subject, takeUntil } from 'rxjs';
 import { Issue } from './models/issue';
 import { IssueService } from './services/issue.service';
 
@@ -22,7 +22,7 @@ export class AppComponent implements OnInit {
 
   ngOnInit() {
 
-    this.issueService.getAllIssues().subscribe((data) => {
+    this.issueService.getAllIssues().pipe(takeUntil(this.destroy)).subscribe((data) => {
 
       this.issues = data;
 
@@ -34,7 +34,7 @@ export class AppComponent implements OnInit {
 
     let priority = "";
 
-    for (let i = 0; i < 4; i++) {
+    for (let i = 0; i < 3; i++) {
       
       if (issue.priority === 0) {
 
@@ -62,11 +62,11 @@ export class AppComponent implements OnInit {
 
     for (let i = 0; i < 3; i++) {
       
-      if (issue.priority === 0) {
+      if (issue.type === 0) {
 
         type = "Feature";
 
-      } else if (issue.priority === 1) {
+      } else if (issue.type === 1) {
 
         type = "Bug";
         
