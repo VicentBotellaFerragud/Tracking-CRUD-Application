@@ -1,43 +1,40 @@
-<h1>This is the tracking app!</h1>
+<h1>Welcome super heroes fan!</h1>
 
-<button (click)="getIssueById(1)">Console log issue with id 1</button>
-<button (click)="getIssueById(2)">Console log issue with id 2</button>
+<h3>In this application you can create, see, edit and delete your own super heroes. Have fun!</h3>
 
-<div style="display: flex; flex-direction: column;">
-    <span>Create an issue</span>
-    <input placeholder="enter the title of the issue" [(ngModel)]="title">
-    <input placeholder="enter the description of the issue" [(ngModel)]="description">
-    <button (click)="createIssue(newIssue)">Create issue</button>
-</div>
+<table>
 
-<br><br><br>
+  <thead>
 
-<div style="display: flex; flex-direction: column;">
-    <span>Edit an issue</span>
-    <input placeholder="enter the id of the issue you want to edit" [(ngModel)]="idToEdit">
-    <input placeholder="enter the new title of the issue" [(ngModel)]="newTitle">
-    <input placeholder="enter the new description of the issue" [(ngModel)]="newDescription">
-    <button (click)="editIssue(idToEdit)">Edit the issue</button>
-</div>
+    <th>Id</th>
+    <th>Title</th>
+    <th>Description</th>
+    <th>Priority</th>
+    <th>Type</th>
+    <th>Created at</th>
+    <th>Completed</th>
 
-<br><br><br>
+  </thead>
 
-<div style="display: flex; flex-direction: column;">
-    <span>Delete an issue</span>
-    <input placeholder="enter the id of the issue you want to delete" [(ngModel)]="idToDelete">
-    <button (click)="deleteIssue(idToDelete)">Delete the issue</button>
-</div>
+  <tbody>
 
-<br><br><br>
+    <tr *ngFor="let issue of issues;">
 
-<div style="display: flex; flex-direction: column;">
-    <span>Search for issues</span>
-    <input #searchBox id="search-box" placeholder="search for issues" (input)="search(searchBox.value)"/>
+      <td>{{ issue.id }}</td>
+      <td>{{ issue.title }}</td>
+      <td>{{ issue.description }}</td>
+      <td>{{ issue.priority }}</td>
+      <td>{{ issue.type }}</td>
+      <td>{{ issue.createdAt }}</td>
+      <td>{{ issue.completed }}</td>
+      <td><button (click)="editIssue(issue)">Edit</button></td>
 
-    <div>
+    </tr>
 
-        <button *ngFor="let issue of issues$ | async">{{ issue.title }}</button>
+  </tbody>
 
-    </div>
+</table>
 
-</div>
+<button class="create-btn" (click)="initNewIssue()">Create a new Issue</button>
+
+<app-edit-issue [issue]="issueToEdit" (issuesUpdated)="updateIssuesList($event)"></app-edit-issue>

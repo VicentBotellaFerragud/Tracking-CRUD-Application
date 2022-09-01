@@ -5,10 +5,12 @@ import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { EditIssueComponent } from './components/edit-issue/edit-issue.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    EditIssueComponent
   ],
   imports: [
     BrowserModule,

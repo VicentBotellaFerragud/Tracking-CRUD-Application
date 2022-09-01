@@ -1,5 +1,4 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Tracking_API.Data;
 using Tracking_API.Models;
@@ -20,6 +19,7 @@ namespace Tracking_API.Controllers
             return await _context.Issues.ToListAsync();
         }
 
+        //This method is not used in the UI.
         [HttpGet("{id}")]
         [ProducesResponseType(typeof(Issue), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
@@ -61,15 +61,15 @@ namespace Tracking_API.Controllers
         [HttpDelete("{id}")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        public async Task<IActionResult> Delete(int id)
+        public async Task<IEnumerable<Issue>> Delete(int id)
         {
             var issueToDelete = await _context.Issues.FindAsync(id);
-            if (issueToDelete == null) return NotFound();
+            if (issueToDelete == null) return (IEnumerable<Issue>)NotFound();
 
             _context.Issues.Remove(issueToDelete);
             await _context.SaveChangesAsync();
 
-            return NoContent();
+            return await _context.Issues.ToListAsync();
         }
     }
 }

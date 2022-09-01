@@ -1,0 +1,46 @@
+<div *ngIf="issue">
+
+    <div class="my-1">
+
+        Title:
+        <input [(ngModel)]="issue.title" placeholder="Name"/>
+
+    </div>
+
+    <div class="my-1">
+
+        Description:
+        <input [(ngModel)]="issue.description" placeholder="First Name"/>
+
+    </div>
+
+    <div class="my-1">
+
+        Priority:
+        <input [(ngModel)]="issue.priority" placeholder="Last Name"/>
+
+    </div>
+
+    <div class="my-1">
+
+        Type:
+        <input [(ngModel)]="issue.type" placeholder="Place"/>
+
+    </div>
+
+    <div class="my-1">
+
+        Completed:
+        <input [(ngModel)]="issue.completed" placeholder="Place"/>
+
+    </div>
+
+    <div>
+
+        <button class="update-btn" (click)="updateIssue(issue)" *ngIf="issue.id">Save</button>
+        <button class="delete-btn" (click)="deleteIssue(issue)" *ngIf="issue.id">Delete</button>
+        <button class="create-btn" (click)="createIssue(issue)" *ngIf="!issue.id">Create</button>
+
+    </div>
+
+</div>

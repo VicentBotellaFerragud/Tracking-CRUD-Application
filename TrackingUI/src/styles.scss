@@ -1,5 +1,26 @@
 /* Global style */
 
+* {
+    font-family: monospace; 
+}
+
 body {
-    background-color: rgb(173, 171, 21);
+    background-color: #b2dc5e;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+button {
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.my-1 {
+    margin-block: .25rem;
 }

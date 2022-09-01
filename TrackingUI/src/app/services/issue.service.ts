@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable, of } from 'rxjs';
+import { Observable } from 'rxjs';
 import { Issue } from '../models/issue';
 
 @Injectable({
@@ -15,14 +15,6 @@ export class IssueService {
   public getAllIssues(): Observable<Issue[]> {
 
     return this.http.get<Issue[]>(this.url);
-
-  }
-
-  public getIssueById(id: number): Observable<Issue> {
-
-    let url = `${this.url}/${id}`;
-
-    return this.http.get<Issue>(url);
 
   }
 
@@ -44,17 +36,6 @@ export class IssueService {
     
     return this.http.delete<Issue[]>(url);
 
-  }
-
-  public searchIssue(term: string): Observable<Issue[]> {
-    
-    if (!term.trim()) {
-      
-      return of([]); 
-      
-    }
-    
-    return this.http.get<Issue[]>(`${this.url}/?title=${term}`);
   }
 
 }
