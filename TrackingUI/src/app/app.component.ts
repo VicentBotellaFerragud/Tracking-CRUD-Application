@@ -10,6 +10,8 @@ import { IssueService } from './services/issue.service';
 })
 export class AppComponent implements OnInit {
 
+  title = 'TrackingUI';
+
   issues: Issue[] = [];
 
   issueToEdit?: Issue;
@@ -25,6 +27,72 @@ export class AppComponent implements OnInit {
       this.issues = data;
 
     });
+
+  }
+
+  setPriority(issue: Issue) {
+
+    let priority = "";
+
+    for (let i = 0; i < 4; i++) {
+      
+      if (issue.priority === 0) {
+
+        priority = "Not set";
+
+      } else if (issue.priority === 1) {
+
+        priority = "Low";
+        
+      } else if (issue.priority === 2) {
+
+        priority = "Medium";
+        
+      } else {
+
+        priority = "High";
+
+      }
+      
+    }
+
+    return priority;
+
+  }
+
+  setType(issue: Issue) {
+
+    let type = "";
+
+    for (let i = 0; i < 4; i++) {
+      
+      if (issue.priority === 0) {
+
+        type = "Not set";
+
+      } else if (issue.priority === 1) {
+
+        type = "Feature";
+        
+      } else if (issue.priority === 2) {
+
+        type = "Bug";
+        
+      } else {
+
+        type = "Documentation";
+
+      }
+      
+    }
+
+    return type;
+
+  }
+
+  isCompleted(issue: Issue) {
+
+    return issue.completed === "" || !issue.completed ? "Not completed" : "Completed";
 
   }
 

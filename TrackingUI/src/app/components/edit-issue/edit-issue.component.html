@@ -3,35 +3,35 @@
     <div class="my-1">
 
         Title:
-        <input [(ngModel)]="issue.title" placeholder="Name"/>
+        <input [(ngModel)]="issue.title" placeholder="Title"/>
 
     </div>
 
     <div class="my-1">
 
         Description:
-        <input [(ngModel)]="issue.description" placeholder="First Name"/>
+        <input [(ngModel)]="issue.description" placeholder="Description"/>
 
     </div>
 
     <div class="my-1">
 
         Priority:
-        <input [(ngModel)]="issue.priority" placeholder="Last Name"/>
+        <input [(ngModel)]="issue.priority" placeholder="Priority" type="number" min="0" max="3"/>
 
     </div>
 
     <div class="my-1">
 
         Type:
-        <input [(ngModel)]="issue.type" placeholder="Place"/>
+        <input [(ngModel)]="issue.type" placeholder="Type" type="number" min="0" max="3"/>
 
     </div>
 
     <div class="my-1">
 
         Completed:
-        <input [(ngModel)]="issue.completed" placeholder="Place"/>
+        <input [(ngModel)]="issue.completed" type="checkbox" value="Completed"/>
 
     </div>
 

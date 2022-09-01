@@ -1,6 +1,6 @@
-<h1>Welcome super heroes fan!</h1>
+<h1>Welcome to the issues table!</h1>
 
-<h3>In this application you can create, see, edit and delete your own super heroes. Have fun!</h3>
+<h3>In this application you can create, see, edit and delete your own issues. Have fun!</h3>
 
 <table>
 
@@ -23,10 +23,10 @@
       <td>{{ issue.id }}</td>
       <td>{{ issue.title }}</td>
       <td>{{ issue.description }}</td>
-      <td>{{ issue.priority }}</td>
-      <td>{{ issue.type }}</td>
+      <td>{{ setPriority(issue) }}</td>
+      <td>{{ setType(issue) }}</td>
       <td>{{ issue.createdAt }}</td>
-      <td>{{ issue.completed }}</td>
+      <td>{{ isCompleted(issue) }}</td>
       <td><button (click)="editIssue(issue)">Edit</button></td>
 
     </tr>

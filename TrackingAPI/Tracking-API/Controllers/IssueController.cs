@@ -52,6 +52,7 @@ namespace Tracking_API.Controllers
             dbIssue.Description = issue.Description;
             dbIssue.Priority = issue.Priority;
             dbIssue.Type = issue.Type;
+            dbIssue.Completed = issue.Completed;
 
             await _context.SaveChangesAsync();
 
