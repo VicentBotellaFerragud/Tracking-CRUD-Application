@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable, Subject, switchMap, debounceTime, distinctUntilChanged } from 'rxjs';
 import { Issue } from './models/issue';
 import { IssueService } from './services/issue.service';
 
@@ -24,6 +25,10 @@ export class AppComponent implements OnInit {
   newDescription: string = "";
 
   idToDelete: number = 0;
+
+  private searchTerms = new Subject<string>();
+
+  issues$!: Observable<Issue[]>;
 
   constructor(private issueService: IssueService) { }
 
@@ -69,9 +74,10 @@ export class AppComponent implements OnInit {
   editIssue(idToEdit: number) {
 
     let idToEditToNumber = Number(idToEdit);
-    console.log(idToEditToNumber);
 
     let issueToEdit = this.issues.find(element => element.id === idToEditToNumber);
+
+    console.log(issueToEdit);
 
     if (issueToEdit) {
 
@@ -91,10 +97,10 @@ export class AppComponent implements OnInit {
   deleteIssue(idToDelete: number) {
 
     let idToDeleteToNumber = Number(idToDelete);
-    console.log(idToDeleteToNumber);
-
     
     let issueToDelete = this.issues.find(element => element.id === idToDeleteToNumber);
+
+    console.log(issueToDelete);
 
     if (issueToDelete) {
 
@@ -105,6 +111,25 @@ export class AppComponent implements OnInit {
       });
 
     } 
+
+  }
+
+  search(term: string): void {
+    
+    this.searchTerms.next(term);
+
+    this.issues$ = this.searchTerms.pipe(
+    
+      //Waits 300ms after each keystroke before considering the search term.
+      debounceTime(300),
+
+      //Ignores the new search term if it's the same as the previous one.
+      distinctUntilChanged(),
+
+      //Switches to a new search observable each time the search term changes.
+      switchMap((term: string) => this.issueService.searchIssue(term)),
+        
+    );
 
   }
   

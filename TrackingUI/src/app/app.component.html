@@ -27,3 +27,17 @@
     <input placeholder="enter the id of the issue you want to delete" [(ngModel)]="idToDelete">
     <button (click)="deleteIssue(idToDelete)">Delete the issue</button>
 </div>
+
+<br><br><br>
+
+<div style="display: flex; flex-direction: column;">
+    <span>Search for issues</span>
+    <input #searchBox id="search-box" placeholder="search for issues" (input)="searchForIssues(searchBox.value)"/>
+
+    <div>
+
+        <button *ngFor="let issue of issues$ | async">{{ issue.title }}</button>
+
+    </div>
+
+</div>
