@@ -117,6 +117,7 @@ export class AppComponent implements OnInit {
   search(term: string): void {
     
     this.searchTerms.next(term);
+    console.log(this.searchTerms);
 
     this.issues$ = this.searchTerms.pipe(
     
