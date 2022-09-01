@@ -38,20 +38,16 @@ export class AppComponent implements OnInit {
       
       if (issue.priority === 0) {
 
-        priority = "Not set";
+        priority = "Low";
 
       } else if (issue.priority === 1) {
-
-        priority = "Low";
-        
-      } else if (issue.priority === 2) {
 
         priority = "Medium";
         
       } else {
 
         priority = "High";
-
+        
       }
       
     }
@@ -64,25 +60,21 @@ export class AppComponent implements OnInit {
 
     let type = "";
 
-    for (let i = 0; i < 4; i++) {
+    for (let i = 0; i < 3; i++) {
       
       if (issue.priority === 0) {
 
-        type = "Not set";
+        type = "Feature";
 
       } else if (issue.priority === 1) {
-
-        type = "Feature";
-        
-      } else if (issue.priority === 2) {
 
         type = "Bug";
         
       } else {
 
         type = "Documentation";
-
-      }
+        
+      } 
       
     }
 

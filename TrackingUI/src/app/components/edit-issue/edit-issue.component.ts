@@ -23,41 +23,49 @@ export class EditIssueComponent implements OnInit {
   updateIssue(issue: Issue) {
 
     this.issueService.editIssue(issue).pipe(takeUntil(this.destroy)).subscribe((issues: Issue[] | any) => {
-      
+
       this.issuesUpdated.emit(issues);
 
       this.issue = undefined;
-    
+
     });
 
   }
 
   deleteIssue(issue: Issue) {
-    
+
     this.issueService.deleteIssue(issue).pipe(takeUntil(this.destroy)).subscribe((issues: Issue[] | any) => {
-      
+
       this.issuesUpdated.emit(issues);
 
       this.issue = undefined;
-    
+
     });
 
   }
 
   createIssue(issue: Issue) {
 
+    !issue.priority ? issue.priority = 0 : issue.priority = issue.priority;
+
+    !issue.type ? issue.type = 0 : issue.type = issue.type;
+
+    issue.createdAt = new Date();
+
+    !issue.completed ? issue.completed = "" : issue.completed = issue.completed;
+
     this.issueService.createIssue(issue).pipe(takeUntil(this.destroy)).subscribe((issues: Issue[] | any) => {
-      
+
       this.issuesUpdated.emit(issues);
 
       this.issue = undefined;
-    
+
     });
 
   }
 
   ngOnDestroy(): void {
-    
+
     this.destroy.next(true);
 
   }
